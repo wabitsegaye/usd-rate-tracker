@@ -13,7 +13,7 @@ matplotlib.use("Agg")  # headless-safe backend for CI
 import matplotlib.pyplot as plt
 import pandas as pd
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(file)), "data")
+DATA_DIR = os.path.join(os.getcwd(), "data")
 HISTORY_CSV = os.path.join(DATA_DIR, "rates_history.csv")
 OUTPUT_PNG = os.path.join(DATA_DIR, "rates_over_time.png")
 
