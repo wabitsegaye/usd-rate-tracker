@@ -37,7 +37,7 @@ CURRENCIES = [
     "KES",  # Kenyan Shilling
 ]
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(file)), "data")
+DATA_DIR = os.path.join(os.getcwd(), "data")
 HISTORY_CSV = os.path.join(DATA_DIR, "rates_history.csv")
 MAX_SNAPSHOTS = 12  # run for "up to 12 hours" at 1 snapshot/hour
 
